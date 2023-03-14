@@ -42,6 +42,30 @@
         
     }
 
+    .seccion-cursos-index{
+        margin-top: 20px;
+    }
+    .div-contenedor-cursos{
+        width: 300px;
+    }
+    .h2-cursos{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .imagen-curso{
+        width: 300px;
+    }
+    .div-contenedor-valores{
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .div-contenedor-valores p{
+        font-size: 2rem;
+    }
+
     @media (max-width: 640px){
         header{
             display: flex;
