@@ -7,7 +7,12 @@
     html{
     font-size : 62.5%;
     }
-    
+    body{
+        background-color: #7DBAAD;
+    }
+    .inactive{
+        display: none;
+    }
 
     /* Header del proyecto  */
 
@@ -32,6 +37,9 @@
         text-decoration: none;
         font-size: 2rem;
         color: white;
+    }
+    header ul li a:hover{
+        color: blue;
     }
     .contenedor-imagen-menu-movil{
         display: none;
@@ -73,6 +81,35 @@
         font-size: 2rem;
     }
     
+    /* aside menu pagina web */
+    .aside-menu-escritorio{
+        position: absolute;
+        right: 70px;
+        top: 55px;
+        background-color: white;
+    }
+    .aside-menu-escritorio h2{
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        border-bottom: solid 1px;   
+        display: grid;
+        justify-items: center;
+        padding: 5px;
+    }
+    .aside-menu-escritorio ul{
+        list-style: none;
+    }
+    .aside-menu-escritorio ul li{
+        margin-bottom: 3px;
+    }
+    .aside-menu-escritorio ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 2rem;
+    }
+    .aside-menu-escritorio ul li a:hover{
+        color: red;
+    }
 
     @media (max-width: 640px){
 
@@ -110,5 +147,23 @@
             object-fit: cover;
         }
 
+
+        .aside-menu-escritorio{
+                left: 0px;
+                top: 55px;
+                right: auto;
+        }
+
+    }
+
+    @media (max-width: 346px){
+        .contenedor-imagen-menu-movil{
+            left: auto;
+            right: 0px;
+        }
+        .aside-menu-escritorio{
+            left: auto;
+            right: 0px;
+        }
     }
   
