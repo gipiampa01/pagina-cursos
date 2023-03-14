@@ -42,11 +42,16 @@
         
     }
 
+    /* main del proyecto */
+
     .seccion-cursos-index{
         margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 240px);
+        gap: 25px;
     }
     .div-contenedor-cursos{
-        width: 300px;
+        width: 240px;
     }
     .h2-cursos{
         font-size: 2.5rem;
@@ -54,7 +59,9 @@
     }
 
     .imagen-curso{
-        width: 300px;
+        width: 240px;
+        border-radius: 20px;
+        object-fit: cover;
     }
     .div-contenedor-valores{
         margin-top: 5px;
@@ -65,8 +72,12 @@
     .div-contenedor-valores p{
         font-size: 2rem;
     }
+    
 
     @media (max-width: 640px){
+
+        /*header movil */
+
         header{
             display: flex;
             justify-content: center;
@@ -81,5 +92,23 @@
             position: absolute;
             left: 0px;
         }
+
+        /* main movil */
+
+        .seccion-cursos-index{
+            
+            grid-template-columns: repeat(auto-fill, 200px);
+            
+        }
+        
+        .div-contenedor-cursos{
+            width: 200px;
+        }
+        .imagen-curso{
+            width: 200px;
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
     }
   
