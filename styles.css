@@ -247,12 +247,16 @@
             flex-direction: column;
             align-items: center;
         }
+        .contenedor-imagen-menu-movil{
+            top: auto;
+        }
        
     }
     @media (max-width: 346px){
         .contenedor-imagen-menu-movil{
             left: auto;
             right: 0px;
+            top: auto;
         }
         .aside-menu-movil{
             right: 0px;
