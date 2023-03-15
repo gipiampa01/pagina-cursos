@@ -241,6 +241,14 @@
         }
         
     }
+    @media (max-width: 425px){
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+       
+    }
 
     @media (max-width: 346px){
         .contenedor-imagen-menu-movil{
