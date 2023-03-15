@@ -249,6 +249,7 @@
         }
         .contenedor-imagen-menu-movil{
             top: auto;
+            width: 82px;
         }
        
     }
@@ -257,6 +258,7 @@
             left: auto;
             right: 0px;
             top: auto;
+            width: 82px;
         }
         .aside-menu-movil{
             right: 0px;
