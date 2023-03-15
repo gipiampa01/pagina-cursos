@@ -81,6 +81,9 @@
         font-size: 2rem;
     }
     
+    /* aside menu movil*/
+
+    
     /* aside cursos pagina web */
     .aside-cursos-escritorio{
         position: absolute;
@@ -194,9 +197,36 @@
             object-fit: cover;
         }
 
+        /* aside menu movil */
+        .aside-menu-movil{
+            position: absolute;
+            top: 54px;
+            width: 110px;
+            height: 100px;
+            background-color: black;
+        }
+        .aside-menu-movil ul{
+            list-style: none;
+        }
+        .aside-menu-movil ul li{
+            padding: 5px;
+        }
+        .aside-menu-movil ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+            margin-top: 5px;
+            border-bottom: 1px solid white;
+        }
+        .aside-menu-movil ul li a:hover{
+            color: orange;
+        }
+            
+        
 
+        /* aside cursos movil */
         .aside-cursos-escritorio{
-                left: 0px;
+                left: 110px;
                 top: 55px;
                 right: auto;
         }
@@ -206,7 +236,7 @@
         
         .aside-acceso{
             right: auto;
-            left: 0px;
+            left: 125px;
         }
         
     }
@@ -215,6 +245,10 @@
         .contenedor-imagen-menu-movil{
             left: auto;
             right: 0px;
+        }
+        .aside-menu-movil{
+            right: 0px;
+            left: auto;            
         }
         .aside-cursos-escritorio{
             left: auto;
