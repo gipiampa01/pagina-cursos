@@ -1,10 +1,20 @@
-let menuEscritorio = document.querySelector(".menu-escritorio");
-menuEscritorio.addEventListener("click", desplegarMenuEscritorio);
 let contenedorImagenMenuMovil = document.querySelector(".contenedor-imagen-menu-movil");
-contenedorImagenMenuMovil.addEventListener("click", desplegarMenuEscritorio);
 
 
-function desplegarMenuEscritorio(){
-    let asideMenuEscritorio = document.querySelector(".aside-menu-escritorio");
-    asideMenuEscritorio.classList.toggle("inactive");
+let cursosEscritorio = document.querySelector(".cursos-escritorio");
+cursosEscritorio.addEventListener("click", desplegarcursosEscritorio);
+let asideCursosEscritorio = document.querySelector(".aside-cursos-escritorio");
+
+let accesoEscritorio = document.querySelector(".acceso-escritorio");
+accesoEscritorio.addEventListener("click", desplegarAccesoEscritorio);
+let asideAccesoEscritorio = document.querySelector(".aside-acceso");
+
+function desplegarcursosEscritorio(){
+    asideCursosEscritorio.classList.toggle("inactive");
+    asideAccesoEscritorio.classList.add("inactive");
+}
+
+function desplegarAccesoEscritorio(){
+    asideAccesoEscritorio.classList.toggle("inactive");
+    asideCursosEscritorio.classList.add("inactive");   
 }

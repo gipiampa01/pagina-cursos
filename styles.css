@@ -81,14 +81,14 @@
         font-size: 2rem;
     }
     
-    /* aside menu pagina web */
-    .aside-menu-escritorio{
+    /* aside cursos pagina web */
+    .aside-cursos-escritorio{
         position: absolute;
-        right: 70px;
+        right: 10px;
         top: 55px;
         background-color: white;
     }
-    .aside-menu-escritorio h2{
+    .aside-cursos-escritorio h2{
         font-size: 2.5rem;
         margin-bottom: 10px;
         border-bottom: solid 1px;   
@@ -96,19 +96,66 @@
         justify-items: center;
         padding: 5px;
     }
-    .aside-menu-escritorio ul{
+    .aside-cursos-escritorio ul{
         list-style: none;
     }
-    .aside-menu-escritorio ul li{
+    .aside-cursos-escritorio ul li{
         margin-bottom: 3px;
     }
-    .aside-menu-escritorio ul li a{
+    .aside-cursos-escritorio ul li a{
         text-decoration: none;
         color: black;
         font-size: 2rem;
     }
-    .aside-menu-escritorio ul li a:hover{
+    .aside-cursos-escritorio ul li a:hover{
         color: red;
+    }
+
+    /* aside de acceso */
+    .aside-acceso{
+        position: absolute;
+        top: 55px;
+        right: 30px;
+    }
+    .div-contenedor-acceso{
+        width: 210px;
+        height: 175px;
+        background-color: #F1F3C0;
+        border-radius: 20px;
+    }
+    .div-contenedor-acceso h2{
+        font-size: 2rem;
+        border-bottom: 1px solid;
+        padding: 5px;
+        display: grid;
+        justify-items: center;       
+    }
+    .formulario-acceso{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .div-inputs-acceso{
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+    }
+    .input-acceso{
+        width: 200px;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        margin-top: 5px;
+    }
+    .boton-acceso{
+        width: 150px;
+        height: 30px;
+        margin-top: 10px;
+        border-radius: 8px;
+        border: none;
+        background-color: black;
+        color: white;
+        font-size: 1.5rem;
     }
 
     @media (max-width: 640px){
@@ -148,12 +195,20 @@
         }
 
 
-        .aside-menu-escritorio{
+        .aside-cursos-escritorio{
                 left: 0px;
                 top: 55px;
                 right: auto;
         }
 
+
+        /* aside de acceso movil */
+        
+        .aside-acceso{
+            right: auto;
+            left: 0px;
+        }
+        
     }
 
     @media (max-width: 346px){
@@ -161,9 +216,13 @@
             left: auto;
             right: 0px;
         }
-        .aside-menu-escritorio{
+        .aside-cursos-escritorio{
             left: auto;
             right: 0px;
+        }
+        .aside-acceso{
+            right: 0px;
+            left: auto;
         }
     }
   
