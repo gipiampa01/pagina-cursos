@@ -249,13 +249,6 @@
         }
        
     }
-    @media (max-width: 385px){
-        .contenedor-imagen-menu-movil{
-            left: auto;
-            right: 0px;
-            top: 54px;
-        }
-    }
     @media (max-width: 346px){
         .contenedor-imagen-menu-movil{
             left: auto;
